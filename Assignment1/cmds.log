@@ -1,0 +1,37 @@
+nano cmds.log
+nano Assignment1.txt
+
+Task 1:
+mkdir -p cs131/Assignment1
+cd cs131/Assignment1
+
+Task 2:
+echo $SHELL
+
+Task 3:
+echo $HOME
+
+Task 4:
+echo $UID
+groups
+
+Task 5:
+mkdir myDir
+chmod a-w myDir
+
+Task 6:
+mkdir myDir2 myDir3
+
+Task 7:
+touch myDir2/myFile.txt
+mv myDir2/myFile.txt myDir3/
+
+Task 8:
+free -m
+
+Task 9:
+cat /etc/os-release
+
+Task 10:
+ls -l /etc/os-release
+
