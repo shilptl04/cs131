@@ -1,0 +1,57 @@
+Task 1: 
+a)
+The command find /etc -type f > one.txt 2 > two.txt, is telling the computer to look through the /etc directory for files. All the files that are found will be written and those names will be stored in the one.txt file. All the problems/error messages we may encounter will be stored in the two.txt file.
+
+b)
+After running cat one.txt, the output that I am given is all the files that are found in the /etc directory. After running cat two.txt, the output that I am given is all the problems/error messages I could have encountered such as Permission denied.
+
+
+Task 2:
+     12 2014 Aug
+     13 2014 Jul
+     15 2006 Mar
+
+The commands I used to find was cut, grep, sort, uniq, and head.
+
+
+Task 3:
+    PID TTY          TIME CMD
+3992371 ?        00:00:01 systemd
+3992373 ?        00:00:00 (sd-pam)
+3992379 ?        00:00:00 sshd
+3992382 pts/28   00:00:00 bash
+3999889 pts/28   00:00:00 ps
+
+Task 4:
+b)
+PID TTY          TIME CMD
+3992371 ?        00:00:02 systemd
+3992373 ?        00:00:00 (sd-pam)
+3992379 ?        00:00:00 sshd
+3992382 pts/28   00:00:00 bash
+4006204 ?        00:00:00 sshd
+4006206 pts/29   00:00:00 bash
+4006455 pts/28   00:00:00 vim
+4006675 pts/29   00:00:00 ps
+
+I noticed that unlike task 3 there is a vim process which has a PID because I opened a vi file in the first terminal before running this command.
+The Process Id for the vim is 4006455.
+
+d)
+    PID TTY          TIME CMD
+3992371 ?        00:00:02 systemd
+3992373 ?        00:00:00 (sd-pam)
+3992379 ?        00:00:00 sshd
+3992382 pts/28   00:00:00 bash
+4006204 ?        00:00:00 sshd
+4006206 pts/29   00:00:00 bash
+4008203 pts/29   00:00:00 ps
+
+I noticed that after I closed the vi file in the first terminal and I ran the same command, the vim process is not shown along with its PID anymore.
+
+Task 5:
+3992371 3990334 3970893 3961995 3960817 3951178 3950501 3854249 3827628 3523835 3433756 3312757 3304023 2808486 2492008 2422345 2379540 2248654 2073814 2060795 105881 86087 1
+
+Task 6:
+The command ps aux displays information about all running processes. This command is used mostly for understanding system resources and to help troubleshoot.
+

@@ -1,0 +1,29 @@
+Task 1:
+find /etc -type f > one.txt 2 > two.txt
+
+b)
+cat one.txt
+cat two.txt
+
+Task 2:
+cut -d, -fX,Y Global\ YouTube\ Statistics.csv | grep -v 'Created Year' | sort | uniq -c | sort -nr | head -n 3
+
+Task 3:
+ps -u $USER
+
+Task 4:
+a)
+vi file.txt
+
+b)
+ps -u $USER
+
+d)
+ps -u $USER
+
+Task 5:
+pidof systemd
+
+Task 6:
+ps aux
+
