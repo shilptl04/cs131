@@ -1,0 +1,11 @@
+Task 1:
+Shows the output of the Youtube channel with the highest monthly earnings from the United States, United Kingdom, and India
+United States,9200000
+India,9000000
+United Kingdom,2000000
+
+Task 2: Shows the output of the highest subscribed channels in Sports, Education, and 
+Entertainment categories
+162000000,Cocomelon_-_Nursery_Rhymes Education
+96000000,WWE Sports
+166000000,MrBeast Entertainment
