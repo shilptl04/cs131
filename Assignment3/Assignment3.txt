@@ -1,0 +1,175 @@
+Task 1:
+Commands used to find the number of lines in last.fake before filtering:
+wc -l last.fake
+
+Ouput of the command:
+507 last.fake
+
+Commands used to make the file such that only lines that "sp24" are in the
+"lastsp24.fake" file:
+grep 'sp24' last.fake > lastsp24.fake
+
+Output of the command:
+N/A
+
+Commands used to find the number of lines in lastsp24.fake after you filtered everything that$
+wc -l lastsp24.fake
+
+Output of the command:
+478 lastsp24.fake
+
+Task 2:
+Commands used to find all the usernames that logged in on a Sunday from the lastsp24.fake fil$
+grep "Sunday" lastsp24.fake | awk '{print $1}' | sort | uniq
+
+Output of the command:
+q
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+alexsp24
+athishsp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+connersp24
+daosp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jessesp24
+justinsp24
+manassp24
+matthewsp24
+michellesp24
+nicholsonsp24
+piercesp24
+rickysp24
+robertsp24
+ronsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+zakisp24
+
+Task 3:
+Commands used to find all the night owls from the lastsp24.fake file:
+awk '$3 >= "23:00" || $3 <= "04:00" {print $1}' lastsp24.fake | sort | uniq
+
+Output of the command:
+q
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+alexsp24
+athishsp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+connersp24
+daosp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jessesp24
+justinsp24
+manassp24
+matthewsp24
+michellesp24
+nicholsonsp24
+piercesp24
+rickysp24
+robertsp24
+ronsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+zakisp24
+
+Task 4:
+Commands used to find all the Early Birds from the lastsp24.fake file:
+awk '$3 >= "05:00" && $3 <= "09:00" {print $1}' lastsp24.fake | sort | uniq
+
+Output of the command:
+q
+
+Task 5:
+Commands used to display the users having a username that start with "t":
+awk '/^t/' lastsp24.fake | awk '{print $1}' | sort | uniq
+
+Output of the Command:
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+Task 6:
+Commands used to find all users that have usernames starting with 'a' and have UID divisible $
+awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+
+Output of the Command:
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+
+Task 7:
+Commands used to display all the distinct lines left in passwd.fake after deleting all letter$
+sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+
+Output of the Command:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
+
